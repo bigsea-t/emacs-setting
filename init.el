@@ -5,6 +5,8 @@
 
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 
+(load-theme 'misterioso t)
+
 
 (load "magit-init")
 (load "flymake-init")
@@ -27,4 +29,6 @@
 
 (define-key ctl-x-map "\C-q" 'view-mode)
 
-
+(global-set-key [f7] '(lambda ()
+(interactive)
+(find-file "~/.emacs.d/init.el")))

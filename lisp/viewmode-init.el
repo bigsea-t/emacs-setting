@@ -44,6 +44,7 @@
 (defun view-mode-hook0 ()
   (define-many-keys view-mode-map pager-keybind)
   (hl-line-mode 1)
+  (gtags-mode t)
   (define-key view-mode-map " " 'scroll-up))
 (add-hook 'view-mode-hook 'view-mode-hook0)
 
@@ -68,9 +69,6 @@
 (do-not-exit-view-mode-unless-writable-advice view-mode-disable)
 
 ;;default view mode http://valvallow.blogspot.jp/2010/05/emacs-view-mode.html
-(global-set-key [f7] '(lambda ()
-(interactive)
-(find-file "~/.emacs.d/init.el")))
 
 (add-hook 'find-file-hook
           '(lambda ()
