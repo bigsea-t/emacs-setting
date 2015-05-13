@@ -70,7 +70,7 @@
 
 ;;default view mode http://valvallow.blogspot.jp/2010/05/emacs-view-mode.html
 
-(add-hook 'find-file-hook
-          '(lambda ()
-             (interactive)
-             (view-mode)))
+;;(add-hook 'find-file-hook
+;;          '(lambda ()
+;;             (interactive)
+;;             (view-mode)))
